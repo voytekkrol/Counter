@@ -38,7 +38,6 @@ namespace Counter
                 listOfHours = conn.Table<Hour>().ToList();
             }
         }
-        //Metoda odświeża własność Text w TextBlock "Counter"
         private void CounterRefresh()
         {
            
@@ -49,9 +48,6 @@ namespace Counter
         {
             Close();
         }
-        //Metoda dodaje do bazy danych nowy rekord z obiektem Hour
-        //następnie tabele bazy danych zapisuje w zmiennej liście listOfHours
-        //następnie odświeża pokazywaną średnią przy pomocy metody CounterRefresh()
         private void AddButton_Clicked(object sender, RoutedEventArgs e)
         {
             Hour hour = new Hour();
@@ -67,9 +63,6 @@ namespace Counter
             }
             CounterRefresh();
         }
-        //Metoda odejmuje z bazy danych ostati rekord z obiektem Hour
-        //następnie tabele bazy danych zapisuje w zmiennej liście listOfHours
-        //następnie odświeża pokazywaną średnią przy pomocy metody CounterRefresh()
 
         private void SubtractButton_Clicked(object sender, RoutedEventArgs e)
         {

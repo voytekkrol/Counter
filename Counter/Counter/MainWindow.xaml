@@ -49,7 +49,7 @@
                     <Image Source="subtractIcon.png" 
                            Height="29" 
                            Width="37"/>
-                    <TextBlock Text="Subtract Hour"
+                    <TextBlock Text="Delete Hour"
                                FontSize="22" 
                                FontWeight="Bold"/>
                 </StackPanel>
