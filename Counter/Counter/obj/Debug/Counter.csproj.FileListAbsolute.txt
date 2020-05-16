@@ -22,3 +22,4 @@ C:\C#\Counter\Counter\Counter\obj\Debug\Counter.csproj.CopyComplete
 C:\C#\Counter\Counter\Counter\obj\Debug\Counter.exe
 C:\C#\Counter\Counter\Counter\obj\Debug\Counter.pdb
 C:\C#\Counter\Counter\Counter\obj\Debug\Counter.csprojAssemblyReference.cache
+C:\C#\Counter\Counter\Counter\obj\Debug\Counter.csproj.CoreCompileInputs.cache

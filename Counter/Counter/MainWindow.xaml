@@ -13,7 +13,7 @@
             <MenuItem Header="File">
                 <MenuItem Header="AddHour" 
                           Click="AddButton_Clicked"/>
-                <MenuItem Header="Subtract" 
+                <MenuItem Header="Delete" 
                           Click="SubtractButton_Clicked"/>
                 <MenuItem Header="Show Total Days" 
                           Click="ShowTotalDays_Clicked"/>
