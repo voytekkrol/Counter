@@ -9,20 +9,18 @@ namespace Counter
 {
     public partial class MainWindow : Window
     {
-        IEnumerable<Hour> listOfHours;
+        IEnumerable<Hour> listOfHours = DatabaseFromFile.Read();
         public double AverageHours { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
-            listOfHours = DatabaseFromFile.Read();
             CounterRefresh();
         }
 
         private void CounterRefresh()
         {
-           
-            Counter.Text = $"Average: {CountAverageHours()} hours";
+            Counter.Text = $"Average: {Counting.CountAverageHours(listOfHours, Counting.DaysFromStart)} hours";
         }
 
         private void Exit_Clicked(object sender, RoutedEventArgs e)
@@ -43,21 +41,7 @@ namespace Counter
 
         private void ShowTotalDays_Clicked(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Days from start: " + DaysFromStart().ToString());
+            MessageBox.Show("Days from start: " + Counting.DaysFromStart(listOfHours).ToString());
         }
-
-        public double DaysFromStart()
-        {
-            DateTime firstDay = listOfHours.ElementAt<Hour>(0).dateTime;
-            return  DateTime.Today.Subtract(firstDay).TotalDays;
-
-        }
-
-        private double CountAverageHours()
-        {
-            return AverageHours = Math.Round(listOfHours.Count() / DaysFromStart(), 2);
-        }
-
-
     }
 }

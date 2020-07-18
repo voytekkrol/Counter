@@ -30,7 +30,6 @@ namespace Counter.Classes
                 connection.CreateTable<Hour>();
                 connection.Insert(hour);
                 return tempListOfHours = connection.Table<Hour>().ToList();
-
             }
         }
 
