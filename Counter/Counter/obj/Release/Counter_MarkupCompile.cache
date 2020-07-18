@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\C#\Counter\Counter\Counter\obj\Debug\
+C:\C#\Counter\Counter\Counter\obj\Release\
 Counter
 none
 false
-DEBUG;TRACE
+TRACE
 C:\C#\Counter\Counter\Counter\App.xaml
 11151548125
 2702109303
