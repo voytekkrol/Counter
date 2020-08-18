@@ -20,7 +20,7 @@ namespace Counter
 
         private void CounterRefresh()
         {
-            Counter.Text = $"Average: {Counting.CountAverageHours(listOfHours, Counting.DaysFromStart)} hours";
+            Counter.Text = $"Average: {Counting.CountAverageHours(listOfHours, Counting.DaysFromStart(listOfHours))} hours";
         }
 
         private void Exit_Clicked(object sender, RoutedEventArgs e)
