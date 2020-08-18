@@ -15,10 +15,11 @@ namespace Counter.Classes
             return DateTime.Today.Subtract(firstDay).TotalDays;
         }
 
-        public static double CountAverageHours(IEnumerable<Hour> listOfHours, Func<IEnumerable<Hour>, double> daysFromStart)
+        public static double CountAverageHours(IEnumerable<Hour> listOfHours, double daysFromStart)
         {
-            var tempValue =  Double.Parse(daysFromStart.ToString());
-            return  Math.Round(listOfHours.Count() / tempValue, 2);
+            string tempValue =  daysFromStart.ToString();
+            var tempValueToCount = Double.Parse(tempValue);
+            return  Math.Round(listOfHours.Count() / tempValueToCount, 2);
         }
     }
 }
